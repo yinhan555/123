@@ -1,0 +1,16 @@
+.main{width: 100px;height:100px;margin: 300px auto;transform-style: preserve-3d;position: relative;transition: all 1s;
+    -webkit-animation: wobble 3s linear infinite;
+}
+@-webkit-keyframes wobble{
+    0%{transform: rotateY(0deg) rotateZ(0deg) rotateZ(0deg);}
+    50%{transform: rotateY(180deg) rotateZ(180deg) rotateZ(180deg);}
+    100%{transform: rotateY(360deg) rotateZ(360deg) rotateZ(360deg);}
+}
+.main:hover{-webkit-animation-play-state: paused;}
+.main div{position: absolute;width: 100px;height: 100px;}
+.one{transform: translate3d(0,0,100px);}
+.two{background: green;transform: translate3d(0,0,-100px);pacity:.6;}
+.three{background: powderblue;transform: translate3d(-100px,0,0)rotateY(90deg);pacity:.6;}
+.four{background: palegreen;transform: translate3d(100px,0,0)rotateY(90deg);pacity:.6;}
+.five{background: gray;transform: translate3d(0,100px,0)rotateX(90deg);pacity:.6;}
+.six{background: yellow;transform: translate3d(0,-100px,0)rotateX(90deg);pacity:.6;}
